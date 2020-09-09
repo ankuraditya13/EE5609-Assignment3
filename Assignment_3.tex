@@ -163,17 +163,12 @@ Applying row transformation in above determinant we get,
 \begin{align}
 \mydet{a-b & b-c & c-a \\
 b-c & c-a & a-b \\
-c-a & a-b & b-c} \xleftrightarrow[]{R_1\leftarrow R_1+R_2} \mydet{a-c & b-a & c-b \\
+c-a & a-b & b-c} \xleftrightarrow[]{R_1\leftarrow R_1+R_2+R_3} \mydet{0 & 0 & 0 \\
 b-c & c-a & a-b \\
-c-a & a-b & b-c}
-\end{align}
-\begin{align}
-\xleftrightarrow[]{R_1\leftarrow R_1+R_3} \mydet{0 & 0 & 0 \\
-b-c & c-a & a-b \\
-c-a & a-b & b-c}
+c-a & a-b & b-c} 
 \label{eq3}
 \end{align}
-From equation (\ref{eq3}) one of the row of \mydet{\vec{A}} is zero
+From equation \eqref{eq3} one of the row of \mydet{\vec{A}} is zero
 \begin{align}
 \implies \mydet{\vec{A}} = 0
 \end{align}
